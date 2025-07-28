@@ -2,41 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Sound and Fury Violins Design System - Elegant Luthier Workshop Aesthetic */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core Brand Colors - Rich and Classic */
+    --background: 45 15% 97%;
+    --foreground: 30 15% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 45 20% 98%;
+    --card-foreground: 30 15% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 45 20% 98%;
+    --popover-foreground: 30 15% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Deep Brown Primary - Evokes Rich Wood */
+    --primary: 25 35% 20%;
+    --primary-foreground: 45 20% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Warm Cream Secondary */
+    --secondary: 45 25% 92%;
+    --secondary-foreground: 25 35% 20%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted Tones */
+    --muted: 40 20% 88%;
+    --muted-foreground: 30 10% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Gold Accent - Evokes Brass Fittings */
+    --accent: 45 55% 75%;
+    --accent-foreground: 25 35% 20%;
+
+    /* Charcoal Grey for Sophisticated Contrast */
+    --charcoal: 220 15% 25%;
+    --charcoal-foreground: 45 20% 95%;
+
+    /* Rich Deep Brown for Luxury Feel */
+    --rich-brown: 20 40% 15%;
+    --rich-brown-foreground: 45 25% 95%;
+
+    /* Warm Gold for Premium Accents */
+    --warm-gold: 42 85% 55%;
+    --warm-gold-foreground: 25 35% 20%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 40 15% 85%;
+    --input: 40 15% 85%;
+    --ring: 25 35% 20%;
 
     --radius: 0.5rem;
+
+    /* Gradients for Sophisticated Backgrounds */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--rich-brown)) 0%, hsl(var(--charcoal)) 100%);
+    --gradient-section: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--secondary)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(var(--muted)) 100%);
+    
+    /* Elegant Shadows */
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--charcoal) / 0.15);
+    --shadow-luxury: 0 20px 60px -15px hsl(var(--rich-brown) / 0.25);
+    --shadow-warm: 0 8px 25px -8px hsl(var(--warm-gold) / 0.20);
+
+    /* Typography Scale */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
 
     --sidebar-background: 0 0% 98%;
 
@@ -56,33 +85,51 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Dark mode with sophisticated luthier workshop feel */
+    --background: 20 15% 8%;
+    --foreground: 45 25% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 20 20% 10%;
+    --card-foreground: 45 25% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 20 20% 10%;
+    --popover-foreground: 45 25% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    /* Warm Gold Primary for Dark Mode */
+    --primary: 42 85% 65%;
+    --primary-foreground: 20 35% 15%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 25 20% 15%;
+    --secondary-foreground: 45 25% 90%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 25 15% 12%;
+    --muted-foreground: 40 10% 60%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 42 75% 55%;
+    --accent-foreground: 20 35% 15%;
 
-    --destructive: 0 62.8% 30.6%;
+    /* Enhanced Dark Mode Brand Colors */
+    --charcoal: 220 20% 15%;
+    --charcoal-foreground: 45 25% 95%;
+
+    --rich-brown: 15 40% 10%;
+    --rich-brown-foreground: 45 25% 95%;
+
+    --warm-gold: 42 85% 65%;
+    --warm-gold-foreground: 20 35% 15%;
+
+    --destructive: 0 62.8% 50%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 25 15% 20%;
+    --input: 25 15% 20%;
+    --ring: 42 85% 65%;
+    
+    /* Enhanced Gradients for Dark Mode */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--rich-brown)) 0%, hsl(var(--charcoal)) 100%);
+    --gradient-section: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--secondary)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(var(--muted)) 100%);
+    
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;

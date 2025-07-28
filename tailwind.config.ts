@@ -52,6 +52,19 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Sound and Fury Violins Brand Colors
+				charcoal: {
+					DEFAULT: 'hsl(var(--charcoal))',
+					foreground: 'hsl(var(--charcoal-foreground))'
+				},
+				'rich-brown': {
+					DEFAULT: 'hsl(var(--rich-brown))',
+					foreground: 'hsl(var(--rich-brown-foreground))'
+				},
+				'warm-gold': {
+					DEFAULT: 'hsl(var(--warm-gold))',
+					foreground: 'hsl(var(--warm-gold-foreground))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -62,6 +75,20 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			backgroundImage: {
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-section': 'var(--gradient-section)',
+				'gradient-card': 'var(--gradient-card)'
+			},
+			boxShadow: {
+				'elegant': 'var(--shadow-elegant)',
+				'luxury': 'var(--shadow-luxury)', 
+				'warm': 'var(--shadow-warm)'
+			},
+			fontFamily: {
+				'heading': 'var(--font-heading)',
+				'body': 'var(--font-body)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
